@@ -66,6 +66,10 @@ public class MyLock {
         }, "Thread-A").start();
 
         /*保证上一个线程先上锁 */
+
+
+
+
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
@@ -76,6 +80,12 @@ public class MyLock {
             myLock.lock();
             myLock.unlock();
         }, "Thread-B").start();
+
+
+
+
+
+
 
     }
 }
